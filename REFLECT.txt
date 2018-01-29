@@ -1,0 +1,29 @@
+Name: Daniel Tao	
+NetID: ct214
+Hours Spent: Start:1/25;Finish:1/26.Estimated hours: 4.33h
+Consulted With: None
+Resources Used: Stackoverflow pages.https://stackoverflow.com/questions/6488339/using-filereader-causes-a-compiler-error-unhandled-exception-type-filenotfounde; 
+https://stackoverflow.com/questions/26448352/counting-the-number-of-lines-in-a-text-file-java
+%%%%
+Impressions: [Maybe the instruction can be less detailed. It is boring to just follow steps written on the pdf.]
+%%%%
+Question 1: What is the final position of the planets after 1,000,000 and 
+2,000,000 seconds with a timestep of 25,000 using planets.txt?
+After 1e6 seconds, the final positions are as follows:
+ x=1.4657e+11  y=2.9604e+10    earth
+ x=2.2659e+11  y=2.4055e+10	  mars
+ x=3.8636e+10  y=4.2569e+10   mercury
+ x=2.6827e+04  y=2.9792e+03   sun
+ x=1.0244e+11  y=3.4391e+10  venus
+After 2e6 seconds, the final positions are as follows:
+x=1.3774e+11  y=5.8036e+10 earth
+x=2.2275e+11  y=4.7841e+10 mars
+x=-5.9865e+09  y=5.7090e+10 mercury
+x=1.0223e+05  y=2.3000e+04  sun
+x=8.5997e+10  y=6.5196e+10 venus
+%%%%
+Question 2: For what values of timeStep, does the simulation no longer behave correctly? 
+I set the value of timeStep to 2.5e6 and set the value of total time to 2e9. The simulation
+is not realistic. The planets start to orbit following elliptical curves instead of circles.
+The stars are moving at very high speeds. By the time the simulation ends, two stars are thrown out of the image.
+%%%%
