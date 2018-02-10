@@ -1,0 +1,91 @@
+Name: [Daniel Tao]
+NetID: [ct214]
+Hours Spent: [5.6]
+Consulted With: [None]
+Resources Used: [online links:
+https://stackoverflow.com/questions/7520432/what-is-the-difference-between-vs-equals-in-java
+https://stackoverflow.com/questions/11229986/get-string-character-by-index-java
+https://stackoverflow.com/questions/12536683/multiple-values-for-a-key-in-hashmap-in-java
+https://docs.oracle.com/javase/7/docs/api/java/lang/Comparable.html
+https://stackoverflow.com/questions/11159105/copying-a-small-array-into-a-larger-one-without-changing-the-target-arrays-size
+https://msdn.microsoft.com/en-us/library/57a79xd0(v=vs.110).aspx
+https://www.geeksforgeeks.org/inheritance-in-java/]
+
+Impressions: [It is the first time that I look at the efficiency of my codes. It is fun to improve the calculating speed of my codes.]
+%%%%
+PROBLEM 1:. 
+Alice.txt:
+Order 	#chars	time
+1	2000	0.019	
+1	4000	0.019
+1	8000	0.020
+1	16000	0.023
+5	2000	0.048	
+5	4000	0.040	
+5	8000	0.042	
+5	16000	0.054	
+10	2000	0.056	
+10	4000	0.062	
+10	8000	0.053	
+10	16000	0.057	
+hawthorne.txt:
+order	#chars	source	time
+1	2000	507914	0.116
+1	4000	507914	0.063
+1	8000	507914	0.061
+1	16000	507914	0.060
+5	2000	507914	0.156
+5	4000	507914	0.139
+5	8000	507914	0.137
+5	16000	507914	0.145
+10	2000	507914	0.224
+10	4000	507914	0.295
+10	8000	507914	0.243
+10	16000	507914	0.243
+
+%%%%
+PROBLEM 2:
+The larger the length of the training text, the longer the runtime. The higher the order, the longer the runtime. The runtime appears to have a linear relationship with the length of training text.
+I estimate that it will take 1.5 seconds to generate a 16000 chars for an order-5 Markov model since 5.5 million is approximately 10 times of length hawthorne.txt, so the runtime should be close to ten times of generating 16000 points for order-5 model in hawthorne.
+
+%%%%
+PROBLEM 3:
+Alice.txt:
+Order 	#chars	time
+1	2000	0.019	
+1	4000	0.019
+1	8000	0.020
+1	16000	0.023
+5	2000	0.048	
+5	4000	0.040	
+5	8000	0.042	
+5	16000	0.054	
+10	2000	0.056	
+10	4000	0.062	
+10	8000	0.053	
+10	16000	0.057	
+hawthorne.txt:
+order	#chars	source	time
+1	2000	507914	0.116
+1	4000	507914	0.063
+1	8000	507914	0.061
+1	16000	507914	0.060
+5	2000	507914	0.156
+5	4000	507914	0.139
+5	8000	507914	0.137
+5	16000	507914	0.145
+10	2000	507914	0.224
+10	4000	507914	0.295
+10	8000	507914	0.243
+10	16000	507914	0.243
+The larger the length of the training text, the longer the runtime. The higher the order, the longer the runtime. The runtime appears to have a linear relationship with the length of training text.
+There is not much difference in runtime when generating different numbers of characters, though.
+I estimate that it will take 1.5 seconds to generate a 16000 chars for an order-5 Markov model since 5.5 million is approximately 10 times of length hawthorne.txt, so the runtime should be close to ten times of generating 16000 points for order-5 model in hawthorne.
+
+%%%%
+PROBLEM 4:
+
+%%%%
+PROBLEM 5:
+
+%%%%
